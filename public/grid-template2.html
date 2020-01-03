@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid</title>
+  <style>
+    img {
+      width: 150px;
+      margin: 20px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+      grid-template-areas: "header header header header"
+                           "sidebar . main main"
+                           'footer footer footer footer';
+    }
+    .item {
+      background: rgba(0,0,0,.2);
+      font-size: 40px;
+      line-height: 120px;
+    }
+    .header {
+      grid-area: header;
+    }
+    .sidebar {
+      grid-area: sidebar;
+    }
+    .main {
+      grid-area: main;
+    }
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item header">header</div>
+    <div class="item sidebar">sidebar</div>
+    <div class="item main">main</div>
+    <div class="item footer">footer</div>
+  </div>
+</body>
+</html>
