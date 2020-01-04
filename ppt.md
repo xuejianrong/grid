@@ -78,12 +78,22 @@ By xuejr {.text-intro}
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格容器中的属性
 ### items
-<p>定义 **网格项** 的布局方式</p>
+<p>定义 **网格项** 相对于网格单元的布局方式</p>
 - `justify-items: stretch | center | start | end;`
 - `align-items: stretch | center | start | end;`
+- `place-items: <'align-items'> <'justify-items'>?`
 
 [示例](/place-items.html){.button.ghost}
 
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## 网格容器中的属性
+### content
+<p>定义 **网格单元** 在网格容器中的布局</p>
+- `justify-content: stretch | start | center | end | space-between | space-around | space-evenly;`
+- `align-content: stretch | start | center | end | space-between | space-around | space-evenly;`
+- `place-content: <'align-content'> <'justify-content'>?`
+
+[示例](/place-content.html){.button.ghost}
 
 
 <style>
