@@ -95,6 +95,43 @@ By xuejr {.text-intro}
 
 [示例](/place-content.html){.button.ghost}
 
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## 网格容器中的属性
+### grid-auto
+- 指定隐式网格轨道的大小
+  - `grid-auto-columns`
+  - `grid-auto-rows`
+- `grid-auto-flow`网格排列方式
+  
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-flow){.button.ghost}
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## css函数
+### 1.`repeat(repeat, value)`
+<p>使用在`grid-template-rows`或者`grid-template-columns`中</p>
+#### `repeat`重复次数
+- \<number\> 整数
+- \<auto-fill\> 以网格项为准自动填充
+- \<auto-fit\> 以网格容器为准自动填充
+#### `value`取值，除了正常尺寸之外，还有
+- `max-content`表示网格轨道长度自适应最大的那个单元格
+- `min-content`
+
+[示例](/repeat.html){.button.ghost}
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## css函数
+### 2.`fit-content`内容适配
+<p>使用在`grid-template-rows`或者`grid-template-columns`中</p>
+
+[示例](/fit-content.html){.button.ghost}
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## css函数
+### 3.`minmax(最小值, 最大值)`
+#### `value`取值，除了正常尺寸之外，还有
+- `max-content`
+- `min-content`
 
 <style>
 p {
