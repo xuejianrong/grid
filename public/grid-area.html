@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid</title>
+  <style>
+    img {
+      width: 150px;
+      margin: 20px;
+    }
+    .container {
+      /* height: 800px; */
+      display: grid;
+      gap: 5px;
+      grid-template-areas: 'one two two three'
+                           'four two two five'
+                           'six six six six';
+    }
+    .item {
+      background: rgba(0,0,0,.2);
+    }
+    .one {
+      grid-area: one;
+    }
+    .two {
+      grid-area: two;
+    }
+    .three {
+      grid-area: three;
+    }
+    .four {
+      grid-area: four;
+    }
+    .five {
+      grid-area: five;
+    }
+    .six {
+      grid-area: six;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item one"><img src="./exp.jpg"></div>
+    <div class="item two"><img src="./exp.jpg"></div>
+    <div class="item three"><img src="./exp.jpg"></div>
+    <div class="item four"><img src="./exp.jpg"></div>
+    <div class="item five"><img src="./exp.jpg"></div>
+    <div class="item six"><img src="./exp.jpg"></div>
+  </div>
+</body>
+</html>

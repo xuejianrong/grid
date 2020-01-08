@@ -133,6 +133,36 @@ By xuejr {.text-intro}
 - `max-content`
 - `min-content`
 
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## 网格项上的属性
+### `start-end`
+- `grid-column-start: <number> | <name> | span | <number> | span <name> | auto`
+- `grid-column-end: <number> | <name> | span | <number> | span <name> | auto`
+- `grid-row-start: <number> | <name> | span | <number> | span <name> | auto`
+- `grid-row-end: <number> | <name> | span | <number> | span <name> | auto`
+- `grid-column: <start-line> / <end-line> | <start-line> / span <value>`
+- `grid-row: <start-line> / <end-line> | <start-line> / span <value>`
+### 注意点
+- 没有声明`grid-column-end`和`grid-row-end`，网格跨越一个轨道
+- 网格项可以重叠，使用z-index来控制堆叠顺序
+
+[示例](/start-end.html){.button.ghost}
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## 网格项上的属性
+### `grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>`
+- name\:结合`grid-template-areas`使用
+- 另一种是`start-end`的缩写
+
+[name示例](/grid-area.html){.button.ghost}
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## 网格项上的属性
+### self
+- `justify-self: <start> | <end> | <center> | <stretch>`
+- `align-self: <start> | <end> | <center> | <stretch>`
+
+
 <style>
 p {
     margin: 20px 0;
