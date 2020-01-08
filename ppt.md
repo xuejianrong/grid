@@ -53,14 +53,16 @@ By xuejr {.text-intro}
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格容器中的属性
-- ### grid-template-columns
-- ### grid-template-rows
+- `grid-template-columns: <track-size> | <[line-name]> <track-size> ...`
+- `grid-template-rows: <track-size> | <[line-name]> <track-size> ...`
+- `track-size`\: `<length> | <percentage> | <flex> | max-content | min-content | minmax(min, max)`
+  
 [示例](/grid-template.html){.button.ghost}
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格容器中的属性
-#### `grid-template-areas: areaName | . | none`
-<p>`.`表示该网格单元是空的</p>
+- `grid-template-areas: <area-name> | none`
+<p>通常使用`.`代表`none`，表示该网格单元是空的</p>
 [示例](/grid-template2.html){.button.ghost}
 
 
@@ -72,8 +74,10 @@ By xuejr {.text-intro}
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格容器中的属性
-### `grid-gap: <'row-gap'> <'column-gap'>?`
+- `grid-gap: <row-gap> <column-gap>?`
 <p>网格间隙，所简写属性：`grid-column-gap`和`grid-row-gap`。不能单独设置其中一个间隙</p>
+- `grid-column-gap`
+- grid-row-gap
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格容器中的属性
@@ -130,8 +134,13 @@ By xuejr {.text-intro}
 ## css函数
 ### 3.`minmax(最小值, 最大值)`
 #### `value`取值，除了正常尺寸之外，还有
-- `max-content`
-- `min-content`
+`max-content`和
+`min-content`
+<p></p>
+
+[普通示例](css-function.html){.button.ghost}
+
+[结合repeat的auto-fill和auto-fit的示例](https://codepen.io/xboxyan/pen/zYYgYdL?editors=1100){.button.ghost}
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格项上的属性
@@ -145,12 +154,13 @@ By xuejr {.text-intro}
 ### 注意点
 - 没有声明`grid-column-end`和`grid-row-end`，网格跨越一个轨道
 - 网格项可以重叠，使用z-index来控制堆叠顺序
+- 如果设置了`place-items`，`start-end`会不生效，[例子](/place-items.html)
 
 [示例](/start-end.html){.button.ghost}
 
 <slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
 ## 网格项上的属性
-### `grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>`
+- `grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>`
 - name\:结合`grid-template-areas`使用
 - 另一种是`start-end`的缩写
 
@@ -162,6 +172,13 @@ By xuejr {.text-intro}
 - `justify-self: <start> | <end> | <center> | <stretch>`
 - `align-self: <start> | <end> | <center> | <stretch>`
 
+
+<slide class="bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark">
+## flex属性
+- `flex: 1 0 100px;`是什么意思？这样子写有什么意义？
+<p></p>
+
+[flex示例](/flex-attrbute.html){.button.ghost}
 
 <style>
 p {
