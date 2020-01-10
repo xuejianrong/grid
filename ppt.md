@@ -56,6 +56,7 @@ By xuejr {.text-intro}
 - `grid-template-columns: <track-size> | <[line-name]> <track-size> ...`
 - `grid-template-rows: <track-size> | <[line-name]> <track-size> ...`
 - `track-size`\: `<length> | <percentage> | <flex> | max-content | min-content | minmax(min, max)`
+<p>定义网格线的名字和网格轨道的宽度</p>
   
 [示例](/grid-template.html){.button.ghost}
 
